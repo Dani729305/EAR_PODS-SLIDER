@@ -34,6 +34,7 @@ header{
     height: 800px;
     overflow: hidden;
     position: relative;
+   
 }
 .slider .list{
     width: 1140px;
@@ -43,6 +44,9 @@ header{
     top: 0;
     left: 50%;
     transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .slider .list .item{
     position: absolute;
@@ -410,3 +414,27 @@ header{
 .slider.detail::before{
     transform: translate(-100%, -50%) rotate(70deg);
 }
+
+@media (max-width: 770px){
+ .slider{
+    margin-top: -50px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+   
+}
+.slider .list{
+    width: 1140px;
+    max-width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+
